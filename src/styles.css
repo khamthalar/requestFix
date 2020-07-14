@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~font-awesome/css/font-awesome.min.css';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@font-face {
+    font-family: 'boonhome-400';
+    src: url("/src/assets/fonts/boonhome/boonhome-400.eot");
+    src: 
+    url("/src/assets/fonts/boonhome/boonhome-400.otf") format("opentype"), 
+    url("/src/assets/fonts/boonhome/boonhome-400.woff") format("woff"), 
+    url("/src/assets/fonts/boonhome/boonhome-400.svg") format("svg"), 
+    url("/src/assets/fonts/boonhome/boonhome-400.ttf") format('truetype');
+}
+
+.boonhome {
+    font-family: 'boonhome-400' !important;
+}
+
+.ng-star-inserted .content .mat-tab-group .mat-tab-header .mat-tab-label-container .mat-tab-list .mat-tab-labels
+.mat-tab-label .mat-tab-label-content{
+    font-family: 'boonhome-400' !important;
+}
+.cdk-overlay-container .cdk-global-overlay-wrapper .cdk-overlay-pane .mat-dialog-container {
+    padding: 0 !important;
+    padding-bottom: 24px !important;
+}
+.cdk-overlay-container .cdk-global-overlay-wrapper .cdk-overlay-pane{
+    max-width: 90vw !important;
+}
+@media(max-width:450px){
+    .cdk-overlay-container .cdk-global-overlay-wrapper .cdk-overlay-pane .mat-dialog-container{
+        border-radius: 0 !important;
+    }
+    .cdk-overlay-container .cdk-global-overlay-wrapper .cdk-overlay-pane{
+        width: 100% !important;
+        max-width: 100vw !important;
+    }
+}

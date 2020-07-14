@@ -1,0 +1,44 @@
+<div class="nav-bar">
+    <div class="title-body-content">
+      <span class="lb">ແຈ້ງບັນຫາຄອມພິວເຕີ</span>
+  
+    </div>
+    <img class="close_icon" src="assets/images/delete.svg" (click)="close()">
+  </div>
+  <div class="containner">
+    <form class="submit-form" [formGroup]="submitForm">
+      <label id="radio-group-label" style="background-color:white;">ອຸປະກອນ</label>
+      <div class="frame">
+        <mat-radio-group style="margin-bottom: 0 !important;" class="radio-group" formControlName="rd_device" #radioGroup="matRadioGroup"
+          (change)="rd_changed($event)">
+          <mat-radio-button value="Computer" class="rd_btn" id="rd01">Computer</mat-radio-button>
+          <mat-radio-button value="Printer" class="rd_btn" id="rd02">Printer</mat-radio-button>
+          <mat-radio-button value="Internet" class="rd_btn" id="rd04">Internet</mat-radio-button>
+          <mat-radio-button [value]="test" class="rd_btn" checked={{rd_select}} id="rd03">
+            <mat-form-field [floatLabel]="'never'">
+              <input matInput placeholder="ອື່ນໆ..." formControlName="txt_rd" [(ngModel)]="test"
+                (click)="rd_select = true">
+            </mat-form-field>
+          </mat-radio-button>
+        </mat-radio-group>
+      </div>
+      <label id="radio-group-label" style="background-color:white;">ອາການ</label>
+      <div class="txt_des_frame">
+        <textarea class="txt_des none-outline" rows="5" formControlName="txt_des"></textarea>
+      </div>
+  
+      <button type="button" class="btn btn-labeled btn-danger disabled" style="margin-top: 0 !important;">
+        <span class="btn-label">
+          <mat-icon>photo_size_select_actual</mat-icon>
+        </span>
+        <span class="btn-text">ເລືອກຮູບ</span>
+      </button>
+      <mat-radio-group class="radio-group" formControlName="rd_choices" #radioGroup="matRadioGroup">
+        <mat-radio-button value="1" class="rd_btn" id="rdc1">ສ້ອມແປງດ່ວນ</mat-radio-button>
+        <mat-radio-button value="0" class="rd_btn" id="rdc2">ບໍ່ດ່ວນ</mat-radio-button>
+      </mat-radio-group>
+      <button type="button" (click)="submit()" class="btn-submit btn-labeled btn-danger" [innerHTML]="loading" [disabled]="loading_status">
+      </button>
+    </form>
+  </div>
+  
