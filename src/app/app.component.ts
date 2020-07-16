@@ -11,14 +11,19 @@ import { MessagingService } from './services/messaging.service';
 export class AppComponent implements OnInit {
   constructor(private router: Router, private auth: AuthService, private messagingService: MessagingService) {
 
-   }
+  }
   ngOnInit(): void {
     this.messagingService.requestPermission();
     this.messagingService.receiveMessage();
-    if (this.auth.isLogin) {
-      this.router.navigate([sessionStorage.getItem('page_name')]);
+    this.auth.setMain(true);
+    if (this.auth.isMain) {
+      if (sessionStorage.getItem('page_name') == undefined) {
+        this.router.navigate(['main']);
+      } else {
+        this.router.navigate([sessionStorage.getItem('page_name')]);
+      }
     } else {
-      this.router.navigate(['login']);
+      this.router.navigate(['main']);
     }
   }
 }

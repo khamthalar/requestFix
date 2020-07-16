@@ -12,10 +12,10 @@ export class AuthService {
   get isLogin() {
     return JSON.parse(sessionStorage.getItem('logedin') || 'false');
   }
-  getUserDetail(user, password) {
-    let data = {
-      "user": user,
-      "password": password
-    }
+  setMain(value:boolean){
+    sessionStorage.setItem('isMain',value.toString());
+  }
+  get isMain(){
+    return JSON.parse(sessionStorage.getItem('isMain' || 'false'));
   }
 }

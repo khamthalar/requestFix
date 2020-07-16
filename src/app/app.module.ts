@@ -40,6 +40,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
 import { DeviceDetectorModule } from 'ngx-device-detector';
+import { MainPageComponent } from './main-page/main-page.component';
 
 
 
@@ -61,7 +62,8 @@ import { DeviceDetectorModule } from 'ngx-device-detector';
     FixDetailComponent,
     ItemInfoComponent,
     UserSettingDialogComponent,
-    FixPageComponent
+    FixPageComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserModule,

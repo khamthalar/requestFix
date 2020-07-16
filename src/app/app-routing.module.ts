@@ -7,6 +7,7 @@ import { SubmitPageComponent } from './submit-page/submit-page.component';
 import { AdminDesboardComponent } from './admin-desboard/admin-desboard.component';
 import { ReportComponent } from './report/report.component';
 import { AdminSetupComponent } from './admin-setup/admin-setup.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 
 const routes: Routes = [
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path:'submit',component:SubmitPageComponent},
   {path:'desboard',component:AdminDesboardComponent},
   {path:'report',component:ReportComponent},
-  {path:'admin_setring',component:AdminSetupComponent}
+  {path:'admin_setring',component:AdminSetupComponent},
+  {path:'main',component:MainPageComponent}
 ];
 
 @NgModule({

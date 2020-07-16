@@ -41,3 +41,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
         max-width: 100vw !important;
     }
 }
+
+.main .mat-tab-group .mat-tab-header .mat-tab-label-container .mat-tab-list .mat-tab-labels .mat-tab-label{
+    height: 70px !important;
+}

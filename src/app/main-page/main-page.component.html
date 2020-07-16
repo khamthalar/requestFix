@@ -1,0 +1,56 @@
+<div class="main">
+    <mat-tab-group mat-align-tabs="center" animationDuration="0ms">
+        <!-- <mat-tab label="First">Content 1</mat-tab> -->
+        <mat-tab>
+            <ng-template mat-tab-label>
+                <div class="tab-item">
+                    <div class="home-ico">
+                        <img src="../../assets/svg/home.svg" width="30">
+                    </div>
+                    <div class="label">Home</div>
+                </div>
+                
+            </ng-template>
+            <div class="content">
+                <div class="header">
+                    <div class="hearder-ico">
+                        <img src="../../assets/svg/lsw_logo.svg" width="200">
+                    </div>
+                    <div class="header-text boonhome">ບັນດາລະບົບຕ່າງໆຂອງບໍລິສັດ ລັດວິສາຫະກິດ ລາວເດີນອາກາດ</div>
+                </div>
+                <div class="body">
+                    <div class="app-item" (click)="requestFix_clicked()">
+                        <div class="img">
+                            <img src="../../assets/svg/fix.svg" width="100">
+                        </div>
+                        <div class="caption boonhome">ແຈ້ງສ້ອມແປງອຸປະກອນໄອທີ</div>
+                    </div>
+                    <div class="app-item">
+                        <div class="img">
+                            <img src="../../assets/svg/quiz.svg" width="100">
+                        </div>
+                        <div class="caption boonhome">ການສອບເສັງ</div>
+                    </div>
+                    <div class="app-item">
+                        <div class="img">
+                            <img src="../../assets/svg/document.svg" width="100">
+                        </div>
+                        <div class="caption boonhome">ລະບົບຈັດການເອກະສານ</div>
+                    </div>
+                    <div class="app-item">
+                        <div class="img">
+                            <img src="../../assets/svg/fix.svg" width="100">
+                        </div>
+                        <div class="caption boonhome">ລະບົບຕິດຕາມ Car</div>
+                    </div>
+                    <div class="app-item">
+                        <div class="img">
+                            <img src="../../assets/svg/fix.svg" width="100">
+                        </div>
+                        <div class="caption boonhome">Occuerrent Report</div>
+                    </div>
+                </div>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+</div>

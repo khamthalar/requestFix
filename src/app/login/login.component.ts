@@ -124,4 +124,9 @@ export class LoginComponent implements OnInit {
     // console.log(isDesktopDevice);
 
   }
+
+  cancel_clicked(){
+    sessionStorage.setItem('page_name','main');
+    this.router.navigate(['main']);
+  }
 }
