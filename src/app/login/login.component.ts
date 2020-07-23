@@ -93,7 +93,7 @@ export class LoginComponent implements OnInit {
     console.log(user);
     // console.log(sessionStorage.getItem("token"));
     if(sessionStorage.getItem("token")==undefined || sessionStorage.getItem("token")==null){
-      window.alert('please allow notification');
+      // window.alert('please allow notification');
       return;
     }
     let token = sessionStorage.getItem("token");
