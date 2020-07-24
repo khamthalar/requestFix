@@ -8,6 +8,7 @@ import { AdminDesboardComponent } from './admin-desboard/admin-desboard.componen
 import { ReportComponent } from './report/report.component';
 import { AdminSetupComponent } from './admin-setup/admin-setup.component';
 import { MainPageComponent } from './main-page/main-page.component';
+import { OccurrenceReportComponent } from './occurrence-report/occurrence-report.component';
 
 
 const routes: Routes = [
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path:'desboard',component:AdminDesboardComponent},
   {path:'report',component:ReportComponent},
   {path:'admin_setring',component:AdminSetupComponent},
-  {path:'main',component:MainPageComponent}
+  {path:'main',component:MainPageComponent},
+  {path:'occurrence_report',component:OccurrenceReportComponent}
 ];
 
 @NgModule({

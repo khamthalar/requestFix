@@ -16,6 +16,10 @@ export class MainPageComponent implements OnInit {
     sessionStorage.setItem('page_name', 'login');
     this.router.navigate(['login']);
   }
+  occurrenceReport_clicked(){
+    sessionStorage.setItem('page_name', 'occurrence_report');
+    this.router.navigate(['occurrence_report']);
+  }
 
 }
 

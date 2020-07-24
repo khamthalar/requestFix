@@ -1,0 +1,56 @@
+@font-face{
+    font-family:'boonhome-400';
+    src: url("/assets/fonts/boonhome/boonhome-400.eot");
+    src: 
+        url("/assets/fonts/boonhome/boonhome-400.otf") format("opentype"),
+        url("/assets/fonts/boonhome/boonhome-400.woff") format("woff"),
+        url("/assets/fonts/boonhome/boonhome-400.svg") format("svg"),
+        url("/assets/fonts/boonhome/boonhome-400.ttf") format('truetype');
+  }
+  
+  .boonhome{
+    font-family: 'boonhome-400' !important;
+  }
+.occ-report-form {
+    padding-top: 10px;
+    max-width: 1060px;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+}
+
+.header {
+    text-align: center;
+    border-bottom: 1px dotted gray;
+}
+
+.header-logo {
+    /* background-color: darkred; */
+    padding-top: 40px;
+    text-align: center;
+    border-bottom: 0.5px solid rgb(216, 216, 216);
+    margin-bottom: 10px;
+}
+.img{
+    padding-bottom: 25px;
+    border-bottom: 2px solid rgb(1, 58, 163);
+    width: fit-content;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.lb {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.place-of-occ, .occ-person, .occ-statement, .occ-img{
+    margin-top: 10px;
+}
+.txt-statement{
+    /* -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; */
+	width: 100%
+}

@@ -41,6 +41,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
 import { DeviceDetectorModule } from 'ngx-device-detector';
 import { MainPageComponent } from './main-page/main-page.component';
+import { OccurrenceReportComponent } from './occurrence-report/occurrence-report.component';
 
 
 
@@ -63,7 +64,8 @@ import { MainPageComponent } from './main-page/main-page.component';
     ItemInfoComponent,
     UserSettingDialogComponent,
     FixPageComponent,
-    MainPageComponent
+    MainPageComponent,
+    OccurrenceReportComponent
   ],
   imports: [
     BrowserModule,
